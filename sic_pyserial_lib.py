@@ -59,9 +59,9 @@ class SIC:
     return ax, ay, az
 
   def getRPYrateCovariance(self):
-    r, p, y = self.get("rpy-est")
+    r, p, y = self.get("rpy-rate-var")
     return r, p, y
   
   def getLinAccCovariance(self):
-    ax, ay, az = self.get("rpy-est")
+    ax, ay, az = self.get("acc-var")
     return ax, ay, az
