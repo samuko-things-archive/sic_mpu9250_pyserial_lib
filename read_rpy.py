@@ -5,7 +5,7 @@ import time
 imu = SIC('/dev/ttyUSB0')
 
 
-for i in range(30):
+for i in range(10):
   time.sleep(1.0)
   print(i+1, " sec")
 
@@ -15,9 +15,7 @@ while True:
 
   if time.time() - prevTime > sampleTime:
     try:
-      roll, pitch, yaw = imu.getRPY() #without heading
-
-      # yaw = imu.getHeading # with heading
+      roll, pitch, yaw = imu.getRPY()
 
       print(f"roll: {roll}, pitch: {pitch}, yaw: {yaw}")
       print("")

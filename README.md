@@ -26,14 +26,23 @@ A simple way to get started is simply to try out and follow the example code
 - connect to sic_driver shield module
   > SIC("port_name or port_path")
 
-- get filtered Roll, Pitch and incremental Yaw values
+- get filtered Roll, Pitch and Yaw readings
   > getRPY()
 
-- get filtered absolute Yaw orientation readings
-  > getHeading()
+- get quaternions qw, qx, qy, qz
+  > getQuat()
 
 - get Roll, Pitch and Yaw rates value
   > getRPYrate()
 
 - get linear acceleration values ax, ay, az
-  > getLinAcc()
+  > getAcc()
+
+- get rpy variances
+  > getRPYvariance()
+
+- get rpy rate variances
+  > getRPYrateVariance()
+
+- get acceleration variances
+  > getAccVariance()
