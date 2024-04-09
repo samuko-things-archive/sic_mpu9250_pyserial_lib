@@ -1,4 +1,4 @@
-from sic_pyserial_lib import SIC
+from sic_mpu9250_pyserial_lib import SIC
 import time
 
 

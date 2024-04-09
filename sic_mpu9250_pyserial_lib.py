@@ -36,6 +36,8 @@ class SIC:
     # return float(data[0]), float(data[1]), float(data[2])
     if len(data)==1:
       return float(data[0])
+    elif len(data)==2:
+      return float(data[0]), float(data[1])
     elif len(data)==3:
       return float(data[0]), float(data[1]), float(data[2])
     elif len(data)==4:
@@ -69,3 +71,7 @@ class SIC:
   def getAccVariance(self):
     ax, ay, az = self.get("acc-var")
     return ax, ay, az
+  
+  def getGain(self):
+    gain = self.get("gain")
+    return gain

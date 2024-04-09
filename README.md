@@ -15,11 +15,13 @@ A simple way to get started is simply to try out and follow the example code
 ## How to Use the Library
 - Ensure you have the **`sic_mpu9250_driver module`** interfaced with the **`MPU9250`** module. setup and cilibrate it using the **`sic_calibration_py_codes`**.
 
+- Ensure you have the `madgwick filter code` (i.e **MODE 2**) running on the sic_mpu9250_driver module (i.e you should see the green led turned on).
+
 - Download (by clicking on the green Code button above) or clone the repo into your PC.
 
 - A simple way to get started is simply to try out and follow the example `read_rpy.py` code.
 
-- You can copy the **`sic_pyserial_lib.py`** file into your python robotics project, import the library as shown in the example `read_rpy.py` code, add it to your code, and start using it.
+- You can copy the **`sic_mpu9250_pyserial_lib.py`** file into your python robotics project, import the library as shown in the example `read_rpy.py` code, add it to your code, and start using it.
 
 ## Basic Library functions and usage
 
