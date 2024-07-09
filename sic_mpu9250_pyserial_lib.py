@@ -52,9 +52,9 @@ class SIC:
     qw, qx, qy, qz = self.get("/quat")
     return qw, qx, qy, qz
   
-  def getRPYrate(self):
-    roll_rate, pitch_rate, yaw_rate = self.get("/gyro-cal")
-    return roll_rate, pitch_rate, yaw_rate
+  def getGyro(self):
+    gx, gy, gz = self.get("/gyro-cal")
+    return gx, gy, gz
   
   def getAcc(self):
     ax, ay, az = self.get("/acc-cal")
@@ -64,9 +64,9 @@ class SIC:
     r, p, y = self.get("/rpy-var")
     return r, p, y
   
-  def getRPYrateVariance(self):
-    r, p, y = self.get("/gyro-var")
-    return r, p, y
+  def getGyroVariance(self):
+    gx, gy, gz = self.get("/gyro-var")
+    return gx, gy, gz
   
   def getAccVariance(self):
     ax, ay, az = self.get("/acc-var")
